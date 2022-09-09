@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/form.css">
+    <title>Form</title>
+</head>
+<body>
+    <div class="form">
+        <div class="form__content">
+            <div class="form__content-left">
+                <form action="" class="form__details">
+                    <h5 class="form_label">1. Contact Details</h5>
+                        <input type="text" name="full_name" placeholder="Full Name" required>
+                        <input type="text" name="patient_id" placeholder="Patient Id if exists"><br>
+                        <input type="text" name="contact" placeholder="Contact Number" required>
+                        <input type="email" name="email" placeholder="Email Id" required>
+                        <br>
+                        <h5 class="form_label">2. Address</h5>
+                        <input type="text" name="house_number" placeholder="House Number" required>
+                        <input type="text" name="street" placeholder="Street" required><br>
+                        <input type="text" name="area" placeholder="Area" required>
+                        <br>
+                        <h5 class="form_label">3. District</h5>
+                        <select name="District" id="district">
+                            <option value="Angul" selected>Anugul</option>
+                            <option value="Baripada">Baripada</option>
+                            <option value="Chandka">Chandka</option>
+                            <option value="Denkanal">Denkanal</option>
+                            <option value="Khordha">Khordha</option>
+                        </select>
+                        <br>
+                        <h5 class="form_label">4. Choose The Test Type</h5>
+                        <input type="checkbox" name="CBC" id="_test-type" value="CBC">
+                        <label for="CBC">CBC</label><br>
+                        <input type="checkbox" name="Complete Urine" id="_test-type" value="Complete Urine">
+                        <label for="Complete Urine">Complete Urine</label><br>
+                        <input type="checkbox" name="Lipid Profile" id="_test-type" value="Lipid Profile">
+                        <label for="Lipid Profile">Lipid Profile</label>
+                        <br>
+                        <input type="checkbox" name="TSH" id="_test-type" value="TSH">
+                        <label for="TSH">Thyroid Stimulating Hormone(TSH)</label><br>
+                        <input type="checkbox" name="Glucose Test" id="_test-type" value="Glucose Test">
+                        <label for="Glucose Test">Glucose Test</label>
+                        <br>
+                        <h5 class="form_label">5. Do you want a hard copy of the report also?</h5>
+                        <input type="radio" name="report" value="yes">Yes
+                        <input type="radio" name="report" value="no">No
+                        <br>
+                        <h5 class="form_label">6. Select Your Comfortable Date and Time</h5>
+                        <input type="date" id="date" name="date" min="2022-08-01" max="2024-08-30">&nbsp;
+                        <input type="time" name="time" id="time">
+                        <br><br>
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                </form>
+            </div>
+            <div class="form__content-right">
+                <img src="../image/Lab-Test/lab-test.jpg" alt="Lab Test" class="form_img">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
